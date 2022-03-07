@@ -1,4 +1,4 @@
-# info.py is Python script for gathering network information
+# infoget.py is Python script for gathering network information
 
 **Usage**
 
