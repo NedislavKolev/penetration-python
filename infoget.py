@@ -22,11 +22,11 @@ outstream = args.output
 
 # Commands executed by the script
 cmd = 'mkdir infogetresults'
-cmd1 = 'nmap -T4 -n -Pn -p* -o netgetresults/' + outstream + '_nmap_allports.txt ' + ipa
-cmd2 = 'nmap -A -T4 -n -Pn -p* -o netgetresults/' + outstream + '_nmap_deepscan.txt ' + ipa
-cmd3 = 'nikto -o netgetresults/' + outstream + '_nikto.txt -p 80,443,8080 -host ' + ipa
-cmd4 = 'gobuster dir -v -e -u http://' + ipa + ' -w /usr/share/wordlists/dirb/common.txt -o netgetresults/' + outstream + '_gobuster.txt'
-cmd5 = 'whatweb ' + ipa + ' > ' + outstream + '_whatweb_scan.txt'
+cmd1 = 'nmap -T4 -n -Pn -p* -o infogetresults/' + outstream + '_nmap_allports.txt ' + ipa
+cmd2 = 'nmap -A -T4 -n -Pn -p* -o infogetresults/' + outstream + '_nmap_deepscan.txt ' + ipa
+cmd3 = 'nikto -o infogetresults/' + outstream + '_nikto.txt -p 80,443,8080 -host ' + ipa
+cmd4 = 'gobuster dir -v -e -u http://' + ipa + ' -w /usr/share/wordlists/dirb/common.txt -o infogetresults/' + outstream + '_gobuster.txt'
+cmd5 = 'whatweb ' + ipa + ' > infogetresults/' + outstream + '_whatweb_scan.txt'
 # Executing the commands
 os.system(cmd)
 print("Results directory created")
