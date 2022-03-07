@@ -4,7 +4,7 @@
 
 Can be used for CTFs (CaptureTheFlag) or just for cheking your network
 
-You can find the output files in "netgetresults" directory
+You can find the output files in "infogetresults" directory
 
 By default ***nikto*** and ***gobuster*** are using ports 80,443 and 8080
 
