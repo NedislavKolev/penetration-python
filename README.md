@@ -10,12 +10,12 @@ By default ***nikto*** and ***gobuster*** are using ports 80,443 and 8080
 
 **Execution**
 
-`./netget.py -ip 10.10.10.5`
+`./infoget.py -ip 10.10.10.5 -o Test`
 
 By default it uses ip address 10.10.10.10
 
 If you need help
 
-`./netget.py -h`
+`./infoget.py -h`
 <hr>
 <hr>
